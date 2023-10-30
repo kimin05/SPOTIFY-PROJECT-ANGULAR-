@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+   
+
+        #content {
+            position: fixed;
+            height: 100%;
+            margin-left: 0px;
+            padding: 50px;
+            transition: margin-left 0.3s;
+            position: relative;
+            background: linear-gradient(to bottom, #000000, #544b4b);
+            color: white;
+            overflow: hidden;
+        }
+
+        #search-bar {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+
+        #playlist {
+            margin-top: 10px;
+        }
+
+        .song {
+           
+            padding: 10px;
+           
+        
+        }
+
+        .song h2 {
+            margin: 0;
+        }
+
+        .song p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="content">
+        <input type="text" id="search-bar" placeholder="Search for music...">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        
+
+        <h1>Top chart Songs</h1>
+        <div id="playlist">
+            
+                <div class="column">
+                <div class="song">
+                <img [src]="image1" 
+                width = "200"
+                height="200">
+                <h2>Blinding light</h2>
+                <p>The Weeknd</p>
+                <p>3:24</p>
+            </div>
+        </div>
+ 
+    
+    <div id="playlist">
+    <div class="column">
+                <div class="song">
+                    <img [src]="image2" 
+                     width = "200"
+                     height="200" >
+                     <h2>Sick Feeling</h2>
+                     <p>Boy Pablo</p>
+                     <p>2:36</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div id="playlist">
+    <div class="column">
+        <div class="song">
+            <img [src]="image3" 
+            width = "200"
+            height="200" >
+            <h2>Dance The Night</h2>
+            <p>Dua Lipa</p>
+            <p>2:56</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="playlist">
+<div class="column">
+        <div class="song">
+            <img [src]="image4" 
+            width = "200"
+            height="200" >
+            <h2>Cupid-Twin Ver</h2>
+            <p>FIFTY FIFTY</p>
+            <p>2:54</p>
+        </div>
+    </div>
+</div>
+
+
+<div id="playlist">
+<div class="column">
+        <div class="song">
+            <img [src]="image5" 
+            width = "200"
+            height="200" >
+            <h2>Vida La Vida</h2>
+            <p>Coldplay</p>
+            <p>4:02</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    
+</body>
+</html>
